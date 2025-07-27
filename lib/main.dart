@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
-import 'splash_screen.dart';
+import 'splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key}); // ✅ FIXED
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'KGX Esports',
       debugShowCheckedModeBanner: false,
-      title: 'KGX App',
-      theme: ThemeData.dark(), // You can customize this
-      home: const SplashScreenPage(), // ✅ FIXED
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const SplashScreenPage(), // ✅ Entry point
     );
   }
 }

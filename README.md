@@ -16,4 +16,3 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-i have 4 json file for the the oboarding screen i want your help to create more 3 onboarding files that use my same theme of app . add build it simple and attractive , use the colors.dart and update the files which are required ..
